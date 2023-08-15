@@ -1,0 +1,8 @@
+---
+- name: install role
+  hosts: localhost
+  become: yes
+
+  roles:
+  - role: httpd
+

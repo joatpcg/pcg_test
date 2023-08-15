@@ -1,0 +1,7 @@
+---
+- name: install req
+  ansible.builtin.command: ansible-galaxy install -r requirements.yml -p roles/
+  
+- name: include role
+  include_role:
+    name:  pradeepkumar027.httpd
