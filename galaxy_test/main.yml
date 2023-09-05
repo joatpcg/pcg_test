@@ -6,8 +6,9 @@
 #  roles:
 #  - role: httpd
   tasks:
-    - name: Touch a file, using symbolic modes to set the permissions (equivalent to 0644)
-      ansible.builtin.file:
-        path: /etc/foo.conf
-        state: touch
-        mode: u=rw,g=r,o=r
+    - name: install req
+      ansible.builtin.command: ansible-galaxy install pradeepkumar027.httpd   
+  
+    - name: include role
+      include_role:
+        name:  pradeepkumar027.httpd
