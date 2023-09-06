@@ -6,5 +6,5 @@
   include_role:
     name:  datadog.dd
   vars:
-    datadog_api_key: "26dce8ea5716b5aae318fc339dace2a2"
+    datadog_api_key: ""
     datadog_site: "datadoghq.eu"
